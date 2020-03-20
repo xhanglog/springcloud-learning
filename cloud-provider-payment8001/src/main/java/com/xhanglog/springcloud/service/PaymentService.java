@@ -1,15 +1,13 @@
-package com.xhanglog.springcloud.dao;
+package com.xhanglog.springcloud.service;
 
 import com.xhanglog.springcloud.entity.Payment;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 /**
  * @Author xhang
  * Date 2020/3/19
  **/
-@Mapper
-public interface PaymentDao {
+public interface PaymentService {
 
     public int create(Payment payment);
 
