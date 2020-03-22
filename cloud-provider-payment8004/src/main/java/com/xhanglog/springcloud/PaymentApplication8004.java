@@ -3,17 +3,16 @@ package com.xhanglog.springcloud;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @Author xhang
- * Date 2020/3/19
+ * Date 2020/3/22
  **/
 @SpringBootApplication
-@EnableEurekaClient
-@EnableDiscoveryClient //服务发现
-public class PaymentApplication8001 {
+@EnableDiscoveryClient
+public class PaymentApplication8004 {
+
     public static void main(String[] args) {
-        SpringApplication.run(PaymentApplication8001.class,args);
+        SpringApplication.run(PaymentApplication8004.class,args);
     }
 }
