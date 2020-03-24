@@ -1,19 +1,19 @@
 package com.xhanglog.springcloud.config;
 
+import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
  * @Author xhang
- * Date 2020/3/19
+ * Date 2020/3/22
  **/
-@Configuration
-public class ApplicationContextConfig {
+@SpringBootConfiguration
+public class ApplicationContexConfig {
 
     @Bean
-    //@LoadBalanced  //开启负载均衡，在自己实现负载均衡的时候去掉这个注解
+    @LoadBalanced
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }
