@@ -9,8 +9,6 @@ spring:
         git:
           #uri: git@github.com:xhanglog/springcloud-config.git #gitHub上的仓库地址#搜索目录
           uri: https://github.com/xhanglog/springcloud-config.git
-          username: xhanglog
-          password: 152juexi
           search-paths: #搜索目录
             - springcloud-config
       label: master #读取分支
