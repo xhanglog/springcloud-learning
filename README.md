@@ -1,7 +1,7 @@
 # springcloud学习记录
 ### 一、相关技术图谱
 
-![SpringCloud技术升级](https://images.cnblogs.com/cnblogs_com/Mhang/1338654/o_200402093218SpringCloud%E6%8A%80%E6%9C%AF%E5%8D%87%E7%BA%A7.png)注：**×** 表示的是已经停止更新，进入维护状态的技术；**√** 表示的是推荐的技术。
+![SpringCloud技术升级](https://github.com/xhanglog/springcloud-learning/blob/master/SpringCloud%E6%8A%80%E6%9C%AF%E5%8D%87%E7%BA%A7.png)注：**×** 表示的是已经停止更新，进入维护状态的技术；**√** 表示的是推荐的技术。
 
 ### 二、相关技术选型
 
