@@ -1,0 +1,37 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-payment-hystrix-service
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/springcloud-learning?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 1234
+
+eureka:
+  client:
+    #是否从Eureka server 抓取已有的注册信息，默认为true。单节点无所谓，集群必须设置为true才能配合ribbon使用负载均衡
+    fetch-registry: true
+    #表示是否将自己注册进入Eureka server ，默认为true
+    register-with-eureka: true
+    service-url:
+      #单机配置一个
+      #defaultZone: http://localhost:7001/eureka
+      #集群配置多个，逗号隔开
+      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+  instance:
+    #配置服务名称，不显示主机名称
+    instance-id: payment8001
+    #ip地址提示
+    prefer-ip-address: true
+    #Eureka 客户端向服务端发送心跳的间隔时间，单位为秒（默认为30秒）
+    lease-renewal-interval-in-seconds: 1
+    #Eureka 服务端在接收到最后一次心跳后等待时间上限，单位为秒（默认为90秒），超时剔除服务
+    lease-expiration-duration-in-seconds: 2
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.xhanglog.springcloud.entity
