@@ -17,6 +17,7 @@ public class CommonResult<T> {
     private String message;//消息串
     private T data;//返回数据
 
+
     //自定义一个构造方法，因为返回的数据可能有些data为空
     public CommonResult(Integer code,String message){
         this(code,message,null);
